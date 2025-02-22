@@ -166,7 +166,7 @@ nav {
   gap: 96px;
 }
 .text_wrapper-top h1 {
-  font-family: "Syne";
+  font-family: Syne;
   font-size: clamp(1rem, 10vw, 7rem);
   line-height: 1;
 }
@@ -206,19 +206,22 @@ nav {
   text-transform: uppercase;
 }
 .marquee-container {
-  display: flex;
-  gap: 8rem;
+  width:100%;
   margin-left: 50px;
-  overflow: hidden;
-  white-space: nowrap;
+  display: flex;
+  overflow:hidden;
 }
 .marquee-body {
   display: flex;
-  gap: 8rem;
-  /* animation: marquee 7s linear infinite; */
+  gap: 6rem;
+  padding-left: 6rem;
+  animation: marquee 8s linear  infinite ;
 }
 .marquee-body img {
   width: 90px;
+  height: 90px;
+  /* border-radius: 50%; */
+  /* object-fit: cover; */
 }
 @keyframes marquee {
   0% {
